@@ -1,0 +1,14 @@
+<template name="post">
+  <div id="postModal" class="modal bottom-sheet">
+    <div class="modal-content">
+      <a href="#!" class="close-button modal-action modal-close">
+         <i class="mdi-navigation-close"></i>
+      </a>
+      {{#if showPost }}
+        {{#markdown}}{{ content }}{{/markdown}}
+      {{else}}
+        {{> spinner }}
+      {{/if}}
+    </div>
+  </div>
+</template>

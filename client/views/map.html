@@ -1,0 +1,9 @@
+<template name="map">
+  <div class="map">
+    {{#if showMap }}
+      {{> googleMap name="map" options=mapOptions}}
+    {{else}}
+      {{> spinner }}
+    {{/if}}
+  </div>
+</template>
