@@ -1,11 +1,16 @@
-window.Posts = new Meteor.Collection('posts');
-
-Meteor.subscribe('visible-posts');
+window.Posts = new Meteor.Collection('posts', { connection: null });
 
 Session.setDefault('currentPostName', 'patong');
 
 Meteor.startup(function() {
   $('#postModal').openModal();
+})
+
+HTTP.get('/posts.json', function(err, response) {
+  var posts = JSON.parse(response.content);
+  posts.forEach(function(post) {
+    Posts.insert(post);
+  });
 })
 
 Template.post.helpers({
@@ -30,7 +35,15 @@ Template.post.helpers({
     var currentPostName = Session.get('currentPostName');
     var currentPost = Posts.findOne({
       name: currentPostName,
-    })
+    });
+
+    if(currentPost && !currentPost.content) {
+      HTTP.get(currentPost.contentUrl, function(err, response) {
+        Posts.update({ name: currentPostName }, { $set: { content: response.content }});
+      })
+      return "";
+    }
+
     return currentPost.content;
   }
 });

@@ -45,62 +45,6 @@ Template.map.onCreated(function() {
   });
 });
 
-// https://snazzymaps.com/style/49/subtle-green
-// var mapStyle = [
-//     {
-//         "stylers": [
-//             {
-//                 "visibility": "on"
-//             },
-//             {
-//                 "saturation": -100
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "water",
-//         "stylers": [
-//             {
-//                 "visibility": "on"
-//             },
-//             {
-//                 "saturation": 100
-//             },
-//             {
-//                 "hue": "#00ffe6"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "road",
-//         "elementType": "geometry",
-//         "stylers": [
-//             {
-//                 "saturation": 100
-//             },
-//             {
-//                 "hue": "#00ffcc"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "poi",
-//         "stylers": [
-//             {
-//                 "visibility": "off"
-//             }
-//         ]
-//     },
-//     {
-//         "featureType": "poi.park",
-//         "stylers": [
-//             {
-//                 "visibility": "on"
-//             }
-//         ]
-//     }
-// ];
-
 var mapStyle = [
     {
         "featureType": "landscape",
