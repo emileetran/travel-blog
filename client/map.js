@@ -38,7 +38,7 @@ Template.map.onCreated(function() {
       // when the marker is clicked on, open the article modal
       google.maps.event.addListener(marker, 'click', function() {
         Session.set("currentPostName", post.name);
-
+        window.history.pushState("", "", "/" + post.name);
         $('#postModal').openModal();
       });
     });
