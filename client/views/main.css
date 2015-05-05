@@ -13,4 +13,6 @@ body, html {
   color: rgba(0, 0, 0, 0.3);
   font-size: 60px;
   z-index: 100;
+  font-family: Georgia;
 }
+

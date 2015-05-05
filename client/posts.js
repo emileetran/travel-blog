@@ -1,6 +1,11 @@
 window.Posts = new Meteor.Collection('posts', { connection: null });
 
-Session.setDefault('currentPostName', 'patong');
+if(document.location.pathname === "/") {
+  Session.set('currentPostName', 'patong');  
+} else {
+  Session.set('currentPostName', document.location.pathname.substring(1));
+}
+
 
 Meteor.startup(function() {
   $('#postModal').openModal();
