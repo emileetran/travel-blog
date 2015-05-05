@@ -1,7 +1,10 @@
 window.Posts = new Meteor.Collection('posts', { connection: null });
 
+var defaultPost = "mumbai";
+
 if(document.location.pathname === "/") {
-  Session.set('currentPostName', 'patong');  
+  window.history.pushState("", "", "/" + defaultPost);
+  Session.set('currentPostName', defaultPost);
 } else {
   Session.set('currentPostName', document.location.pathname.substring(1));
 }
