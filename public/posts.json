@@ -38,6 +38,14 @@
     "lng": 85.3333,
     "contentUrl": "/kathmandu.md",
     "thumbnailUrl": "/kathmandu-small.jpg"
+  },
+  {
+    "visible": true,
+    "name": "jaisalmer",
+    "lat": 26.9200, 
+    "lng": 70.9000, 
+    "contentUrl": "/jaisalmer.md",
+    "thumbnailUrl": "/jaisalmer-small.jpg"
   }
 
 ]
