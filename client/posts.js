@@ -1,6 +1,6 @@
 window.Posts = new Meteor.Collection('posts', { connection: null });
 
-var defaultPost = "mumbai";
+var defaultPost = "istanbul";
 
 if(document.location.pathname === "/") {
   window.history.pushState("", "", "/" + defaultPost);

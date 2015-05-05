@@ -1,5 +1,4 @@
-# **Patong**
-# *หาดป่าตอง*
+# **Patong** *หาดป่าตอง*
 
 <div class="read-time">5 minute read</div>
 

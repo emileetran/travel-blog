@@ -1,6 +1,6 @@
 [
   {
-    "visible": true,
+    "visible": false,
     "name": "patong",
     "lat": 7.8900,
     "lng": 98.2900,
@@ -16,11 +16,19 @@
     "thumbnailUrl": "/istanbul-small.jpg"
   },
   {
-    "visible": true,
+    "visible": false,
     "name": "mumbai",
     "lat": 18.9750,
     "lng": 72.8258,
     "contentUrl": "/mumbai.md",
     "thumbnailUrl": "/mumbai-small.jpg"
+  },
+  {
+    "visible": true,
+    "name": "antalya",
+    "lat": 36.9000,
+    "lng": 30.6833,
+    "contentUrl": "/antalya.md",
+    "thumbnailUrl": "/antalya-small.jpg"
   }
 ]
