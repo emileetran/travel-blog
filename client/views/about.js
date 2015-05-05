@@ -1,5 +1,6 @@
 Template.about.events({ 
 "click .aboutButton": function (event, template) {
-    $('#aboutModal').openModal();;
+    $('#aboutModal').openModal();
+    window.history.pushState("", "", "/about");
   },
 });
