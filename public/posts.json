@@ -30,5 +30,14 @@
     "lng": 30.6833,
     "contentUrl": "/antalya.md",
     "thumbnailUrl": "/antalya-small.jpg"
+  },
+  {
+    "visible": true,
+    "name": "kathmandu",
+    "lat": 27.7000,
+    "lng": 85.3333,
+    "contentUrl": "/kathmandu.md",
+    "thumbnailUrl": "/kathmandu-small.jpg"
   }
+
 ]
