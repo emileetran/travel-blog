@@ -1,14 +1,14 @@
 window.Posts = new Meteor.Collection('posts', { connection: null });
 
-var defaultPost = "istanbul";
+window.defaultPost = "istanbul";
 
 if(document.location.pathname === "/") {
   window.history.pushState("", "", "/" + defaultPost);
   Session.set('currentPostName', defaultPost);
 } else {
-  Session.set('currentPostName', document.location.pathname.substring(1));
+  var requestedPost = document.location.pathname.substring(1);
+  Session.set('currentPostName', requestedPost);
 }
-
 
 Meteor.startup(function() {
   $('#postModal').openModal();

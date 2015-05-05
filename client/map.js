@@ -7,7 +7,7 @@ Template.map.helpers({
     return GoogleMaps.loaded() && Posts.findOne();
   },
   mapOptions: function() {
-    var firstPost = Posts.findOne();
+    var firstPost = Posts.findOne({ name: defaultPost });
     return {
       zoom: 3,
       disableDefaultUI: true,
@@ -19,7 +19,12 @@ Template.map.helpers({
 
 Template.map.onCreated(function() {
   GoogleMaps.ready('map', function(map) {
-    Posts.find({visible: true}).forEach(function(post) {
+    Posts.find({
+        visible: true,
+        thumbnailUrl: { '$exists': true },
+        lng: { '$exists': true },
+        lat: { '$exists': true },
+    }).forEach(function(post) {
 
       // create a new marker representing this post
       var marker = new google.maps.Marker({
