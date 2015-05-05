@@ -21,6 +21,13 @@ HTTP.get('/posts.json', function(err, response) {
   });
 })
 
+Template.post.events({
+  'click .scrollToTop a': function(e) {
+    e.preventDefault();
+    $('.modal').animate({ scrollTop: 0 }, 'slow');
+  }
+})
+
 Template.post.helpers({
   showPost: function() {
     var currentPostName = Session.get('currentPostName');
