@@ -51,6 +51,30 @@
     "lng": 70.9000, 
     "contentUrl": "/jaisalmer.md",
     "thumbnailUrl": "/jaisalmer-small.jpg"
+  },
+  {
+    "visible": true,
+    "name": "delhi",
+    "lat": 28.6139,
+    "lng": 77.2090,
+    "contentUrl": "/delhi.md",
+    "thumbnailUrl": "/delhi-small.jpg"
+  },
+  {
+    "visible": true,
+    "name": "pokhara",
+    "lat": 28.2639,
+    "lng": 83.9722,
+    "contentUrl": "/pokhara.md",
+    "thumbnailUrl": "/pokhara-small.jpg"
+  },
+  {
+    "visible": true,
+    "name": "goreme",
+    "lat": 38.6431,
+    "lng": 34.8289,
+    "contentUrl": "/goreme.md",
+    "thumbnailUrl": "/goreme-small.jpg"
   }
 
 ]
